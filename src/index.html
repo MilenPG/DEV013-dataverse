@@ -2,10 +2,45 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Data Lovers</title>
+    <title>Aves de latinoamérica</title>
+    <link rel="icon" href="https://uxwing.com/wp-content/themes/uxwing/download/animals-and-birds/bird-icon.png">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
+      <h1>Aves de latinoamérica</h1>
+    </header>
+    <main>
+      <h2>
+        <label for="order">Ordenar por:</label>
+        <select id="order" data-testid="select-sort" name="alphabetic">
+          <option value="">---</option>      
+          <option value="asc">A - Z</option>
+          <option value="desc">Z - A</option>
+        </select>
+      
+        <label for="filter">Filtrar por:</label>
+        <select id="filter" data-testid="select-filter" name="conservation-status">      
+          <option value="">---</option>
+          <option value="preocupacion-menor">Preocupación menor</option>
+          <option value="vulnerable">Vulnerable</option>
+          <option value="casi-amenazado">Casi amenazado</option>
+        </select>
+
+        <!--AQUÍ VA BOTON DE LIMPIAR-->
+    </h2>
+
+    <div id="root">
+      <ul>
+          <!-- Los hijos de <li> usan atributos de microdata itemscope e itemprop.
+           - ¿los atributos de microdata habría que ponerlos desde HTML o JS?
+           - cómo agregar atributos de microdata desde createElement en javascript -->
+      </ul>
+    </div>  
+    </main>
+    <footer>
+      <p>Developed by Daisy C. H.,  Milen P. G.</p>
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>

@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     background-color: #FFFFFF;
     justify-content: center;
     letter-spacing: normal;
@@ -12,4 +14,71 @@ h1 {
     margin: 0;
     text-align: center;
     font-weight: lighter;
+}
+
+.control-bar {
+    background-color: #C39469;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: center;
+    padding: 0.5em;
+    font-weight: lighter;
+}
+
+.cardsContainer {
+    margin: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8em;
+    align-items: center;
+    justify-content: center;
+    /*display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content:center;*/
+    
+}
+
+.card {
+    width: 400px;
+    height: 550px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: solid thin #C39469;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.imgAndName {
+    width: inherit;
+    height: 450px;
+    background-color: #000;
+    color: #FFFFFF;
+    font-weight: lighter;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2px;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.cardImg {
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    position: inherit;
+    border-radius: inherit;
+}
+
+.birdFacts {
+    margin: 0.5rem;
+    display: flex;
+    list-style: circle;
+    align-items: flex-start;
+    flex-direction: column;
 }

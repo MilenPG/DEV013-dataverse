@@ -1,7 +1,8 @@
 export const renderItems = (data) => {
   
   const birdData = data;
-  const cardsContainer= document.createElement('ul')
+  const cardsContainer= document.createElement('ul');
+  cardsContainer.className = 'cardsContainer';
   for (let i=0; i<birdData.length; i++) {
     const li = document.createElement('li');
     li.innerHTML= `

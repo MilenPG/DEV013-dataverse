@@ -8,7 +8,7 @@ body {
     font-family: 'Bree Serif', serif;
 }
 
-h1 {
+header {
     background-color: #000;
     color: #FFFFFF;
     margin: 0;
@@ -30,7 +30,7 @@ h1 {
     margin: 3em;
     display: flex;
     flex-wrap: wrap;
-    gap: 4em;
+    gap: 6em;
     align-items: center;
     justify-content: center;
     /*display: flex;
@@ -60,7 +60,7 @@ h1 {
     background-color: #000;
     color: #FFFFFF;
     font-weight: lighter;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 2px;
@@ -71,7 +71,7 @@ h1 {
 .cardImg {
     margin: auto;
     width: 400px;
-    height: 400px;
+    height: 400px; /* con min-height*/
     position: inherit;
     border-radius: inherit;
 }

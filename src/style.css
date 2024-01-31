@@ -17,7 +17,8 @@ h1 {
 }
 
 .control-bar {
-    background-color: #C39469;
+    /*background-image: linear-gradient(50deg, rgba(0, 64, 255, 0.362), rgba(0, 255, 89, 0.597));*/
+    background-color: #69c39e;
     color: #FFFFFF;
     margin: 0;
     text-align: center;
@@ -26,10 +27,10 @@ h1 {
 }
 
 .cardsContainer {
-    margin: 4em;
+    margin: 3em;
     display: flex;
     flex-wrap: wrap;
-    gap: 8em;
+    gap: 4em;
     align-items: center;
     justify-content: center;
     /*display: flex;

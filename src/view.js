@@ -8,8 +8,10 @@ export const renderItems = (data) => {
     li.innerHTML= `
       <div class='imgAndName'>
         <img class='cardImg' src='${birdData[i].imageUrl}' alt="fotografía de '${birdData[i].name}'">
-        <p1>${birdData[i].name}</p>
-        <p2>${birdData[i].facts.scientificName}</p>
+        <div class='cardNames'>
+          <p1>${birdData[i].name}</p>
+          <p2 class='scientificName'>${birdData[i].facts.scientificName}</p>
+        </div>
       </div>
       <ul class= 'birdFacts'>
         <li>Hábitat: ${birdData[i].facts.birdHabitat}</li>

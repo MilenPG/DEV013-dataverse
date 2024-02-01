@@ -53,16 +53,11 @@ select {
     flex-wrap: wrap;
     gap: 4em;
     align-items: center;
-    justify-content: center;
-    /*display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content:center;*/
-    
+    justify-content: center;    
 }
 
 .card {
+    margin: 0;
     font-size: 1rem;
     width: 300px;
     height: 500px;
@@ -106,7 +101,7 @@ select {
     margin: auto;
     margin-top: 0;
     width: 300px;
-    height: 300px; /* con min-height*/
+    height: 300px; /* con min-height?*/
     position: inherit;
     border-radius: inherit;
 }

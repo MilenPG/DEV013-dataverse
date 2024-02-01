@@ -9,9 +9,15 @@ body {
 }
 
 header {
+    margin: 0;
+    font-size: 1.5rem;    
+}
+
+h1 {
     background-color: #000;
     color: #FFFFFF;
     margin: 0;
+    padding: 0.5rem;
     text-align: center;
     font-weight: lighter;
 }
@@ -22,8 +28,22 @@ header {
     color: #FFFFFF;
     margin: 0;
     text-align: center;
-    padding: 0.5em;
+    padding: 0.5rem;
     font-weight: lighter;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+select {
+    background-color: #e3fcf2;
+    border-radius: 10%;
+    border-style: none;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    width: 8%;
+    font-size: 1rem;
+    font-family: inherit;
 }
 
 .cardsContainer {
@@ -42,8 +62,9 @@ header {
 }
 
 .card {
+    font-size: 1.1rem;
     width: 400px;
-    height: 550px;
+    height: 580px;
     text-align: center;
     justify-content: center;
     border-radius: 20px;
@@ -82,4 +103,15 @@ header {
     list-style: circle;
     align-items: flex-start;
     flex-direction: column;
+}
+
+footer {
+    margin-bottom: 0;
+    background-color: #000;
+    opacity: 80%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 0.1rem;
+    font-size: 1.1rem;
 }

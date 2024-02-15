@@ -11,7 +11,7 @@
   <body>
 
     <header>
-      <h1>Aves de latinoamérica</h1>
+      <h1>AVES DE LATINOAMÉRICA</h1>
     </header>
 
     <main>
@@ -27,11 +27,17 @@
         <select id="filter" data-testid="select-filter" name="conservation-status">      
           <option value="">---</option>
           <option value="preocupacion-menor">Preocupación menor</option>
-          <option value="vulnerable">Vulnerable</option>
           <option value="casi-amenazado">Casi amenazado</option>
+          <option value="vulnerable">Vulnerable</option>
         </select>
-
-        <!--AQUÍ VA BOTON DE LIMPIAR-->
+     <!--   <input type="text" name="Search" id="search" placeholder="Buscar Ave..."> -->
+        <button id="statistics">Estadísticas</button>
+        <dialog id="statisticsWindos">
+          <h1> Estadisticas </h1>
+          <p> </p>
+          <button id="statisticsClose"> Cerrar </button>
+        </dialog>
+        <button id="reset-button" title="Limpiar">Limpiar</button>
       </h2>
 
       <div id="root">

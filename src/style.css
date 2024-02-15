@@ -14,8 +14,8 @@ header {
 }
 
 h1 {
-    background-color: #000;
-    color: #FFFFFF;
+    background-color: #739915;
+    color: #e8f4ca;
     margin: 0;
     padding: 0.5rem;
     text-align: center;
@@ -23,13 +23,14 @@ h1 {
 }
 
 .control-bar {
-    /*background-image: linear-gradient(50deg, rgba(0, 64, 255, 0.362), rgba(0, 255, 89, 0.597));*/
-    background-color: #69c39e;
-    color: #FFFFFF;
+    
+    background-color: white;
+    color: #4d6b00;
     margin: 0;
+    margin-left: 4rem;
     text-align: center;
-    padding: 0.5rem;
-    font-weight: lighter;
+    padding: 0.1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
     display: flex;
     flex-direction: row;
@@ -37,14 +38,20 @@ h1 {
 }
 
 select {
-    background-color: #e3fcf2;
-    border-radius: 10%;
-    border-style: none;
-    margin: 0.5rem;
-    padding: 0.2rem;
+    background-color: #f3ffd3;
+    border-radius:1rem;
+    color: #2f4100;
+    border-style:groove;
+    border: solid thin #C39469;
+    text-align:left;
+    margin-top: 0.6rem;
+    margin-inline-start: 0.8rem;
+    margin-inline-end: 2rem;
+    max-width: 9rem;
+    padding: 0.5rem;
     width: 8%;
-    font-size: 1rem;
-    font-family: inherit;
+    font-size: 0.8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .cardsContainer {
@@ -54,12 +61,6 @@ select {
     gap: 4em;
     align-items: center;
     justify-content: center;
-    /*display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    align-items: center;
-    justify-content:center;*/
-    
 }
 
 .card {
@@ -79,8 +80,8 @@ select {
 .imgAndName {
     width: inherit;
     height: 380px;
-    background-color: #000;
-    color: #FFFFFF;
+    background-color:#e8ffae;
+    color: black;
     font-weight: lighter;
     display: flex;
     flex-direction: column;
@@ -132,4 +133,42 @@ footer {
     justify-content: center;
     padding: 0.1rem;
     font-size: 0.8rem;
+}
+
+#reset-button{
+    background-color: #4d6b00;
+    color: white;
+    margin-top: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.4rem;    
+}
+
+/*#search{
+    background-color: #f3ffd3;
+    border-radius:1rem;
+    color: #2f4100;
+    border: solid thin #C39469;
+    text-align:center;
+    margin-top: 0.6rem;
+    margin-inline-end: 5rem;
+    margin-inline-start: 35rem;
+    padding: 0.5rem;
+    width: 8%;
+    font-size: 0.8rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}*/
+
+#statistics{
+    background-color: #4d6b00;
+    color: white;
+    margin-top: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.4rem;       
+    margin-inline-end: 5rem;
+    margin-inline-start: 35rem;
+ 
 }

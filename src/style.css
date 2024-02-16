@@ -13,13 +13,17 @@ header {
     font-size: 1rem;    
 }
 
-h1 {
+#titlePrincipal {
     background-color: #739915;
+    width: 100%;
     color: #e8f4ca;
     margin: 0;
     padding: 0.5rem;
     text-align: center;
     font-weight: lighter;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 .control-bar {
@@ -35,6 +39,8 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
+    top: 59px;
 }
 
 select {
@@ -45,9 +51,9 @@ select {
     border: solid thin #C39469;
     text-align:left;
     margin-top: 0.6rem;
-    margin-inline-start: 0.8rem;
-    margin-inline-end: 2rem;
-    max-width: 9rem;
+    margin-inline-start: 0.6rem;
+    margin-inline-end: 6rem;
+    max-width: 8rem;
     padding: 0.5rem;
     width: 8%;
     font-size: 0.8rem;
@@ -55,7 +61,7 @@ select {
 }
 
 .cardsContainer {
-    margin: 3em;
+    margin: 9em;
     display: flex;
     flex-wrap: wrap;
     gap: 4em;
@@ -119,9 +125,12 @@ select {
     display: flex;
     list-style: circle;
     align-items: flex-start;
+    text-align: left;
     justify-content: center;
     flex-direction: column;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0.8rem;
 }
 
 footer {
@@ -160,7 +169,7 @@ footer {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }*/
 
-#statistics{
+#buttonStatistics{
     background-color: #4d6b00;
     color: white;
     margin-top: 0.6rem;
@@ -169,6 +178,37 @@ footer {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 0.4rem;       
     margin-inline-end: 5rem;
-    margin-inline-start: 35rem;
+    margin-inline-start: 25rem;
  
+}
+
+#statisticsWindowOpen{
+    background-color: white;
+    color: black; 
+    width: 300px;
+    height: 300px;
+    font-size: 0.5rem;
+}
+#titleStatistics{
+    background-color: #739915;
+    width: 100%;
+    height: 1.8rem;
+    color: #e8f4ca;
+    padding: 0.4rem 0 0 0;
+    font-weight: lighter;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+#statisticsWindowClose{
+    background-color: #4d6b00;
+    color: white;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.4rem;  
+}     
+
+canvas{
+    max-width: 100%;
 }

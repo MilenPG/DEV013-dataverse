@@ -1,7 +1,7 @@
 //import { example } from './dataFunctions.js';
 import { renderItems } from './view.js';
 import data from './data/dataset.js';
-import { filterData, sortData} from './dataFunctions.js';
+import { filterData, sortData, computeStats} from './dataFunctions.js';
 
 const selectOrder = document.getElementById('order');
 const selectFilter = document.getElementById('filter');
@@ -11,6 +11,7 @@ root.appendChild(renderItems(data));
 
 //console.log(example, renderItems(data), data);
 const filter = document.querySelector('#filter');
+selectFilter.selectedIndex = "";
 filter.addEventListener('change', () => {
   root.innerHTML= "";
   const datafilter = filterData (data, 'conservationStatus', filter.value)
@@ -18,6 +19,7 @@ filter.addEventListener('change', () => {
 })
 
 const order = document.querySelector('#order');
+selectOrder.selectedIndex = "";
 order.addEventListener('change', () => {
   root.innerHTML= "";
   const datasort = sortData (data, 'name', order.value)
@@ -46,8 +48,26 @@ const windowStatistics = document.querySelector('#statisticsWindowOpen');
 const cerrarStatistics = document.querySelector('#statisticsWindowClose');
 openStatistics.addEventListener("click",()=>{
   windowStatistics.showModal();
+  const statisticsContent = document.querySelector('.contentStatistics');
+  const staticBird = computeStats(data);
+  //console.log (staticBird.resultOne);
+  
+  statisticsContent.innerHTML = ("<p class='statisticTitle'> De las 24 especies de aves elegidas que habitan en América Latina su estado de conservación son: </p>");
+  statisticsContent.innerHTML += ("<p class='statisticOne'>  </p>");
+  statisticsContent.innerHTML += ("Preocupación Menor son:   "+ (staticBird.resultOne) + "%"); 
+  statisticsContent.innerHTML += ("<p class='statisticOne'>  </p>");
+  statisticsContent.innerHTML += ("En peligro de extinción son:   "+ (staticBird.resultTwo) + "%"); 
+  statisticsContent.innerHTML += ("<p class='statisticOne'>  </p>");
+  statisticsContent.innerHTML += ("En estado vulnerable:   "+ (staticBird.resultThree) + "%"); 
+   
+
+  /*console.log(staticBird, "VER ESTADISTICAS");
+  staticBird.innerHTML;*/
 })
-/*const std = document.getElementById('myChart')
+
+
+/*
+const std = document.getElementById('myChart')
 const names = ['Ronn', 'Daisy', 'Madelein']
 const ages = [17, 42, 13]
 const myChart = new CharacterData(std, {
@@ -69,7 +89,16 @@ const myChart = new CharacterData(std, {
     }]
   }
 })*/
-
 cerrarStatistics.addEventListener("click",()=>{
   windowStatistics.close();
 })
+/*
+const openInfo = document.querySelectorAll('#buttonInfo');
+const windowInfo = document.querySelector('#infoBird');
+const cerrarInfo = document.querySelector('#closeInfo');
+openInfo.addEventListener("click",()=>{
+  windowInfo.showModal();
+})
+cerrarInfo.addEventListener("click",()=>{
+  windowInfo.close();
+})*/
